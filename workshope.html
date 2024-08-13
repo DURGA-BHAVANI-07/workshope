@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Stage1</h1>
+    <p><b>1.what is diference between div and span?</b></p>
+    <p>Ans.<div> Used for block-level grouping of content.<br>
+        <span> Used for inline grouping of content.</content><br>
+            Ex:
+            This is a paragraph outside of the div but with .span style="color: red;">some red text /span. using a span.</p>
+            <hr>
+
+    <p><b>2.What are the semantic elements in html?</b></p>
+    <p>Ans.Semantic elements in HTML are those that clearly describe their meaning and purpose in a human- and machine-readable way.
+        <br>ex.header <br>
+        nav <br>
+        main  <br>section <br>article<br>aside<br>footer<br>figure<br>mark<br>time<br>     
+    </p>
+    <hr>
+    <p><b>3.What is diference between xml and html?</b></p>
+    <p>Ans.XML: Allows users to define their own custom tags based on their needs. Tags in XML are case-sensitive. <br>
+        HTML: Uses a predefined set of tags specified by the World Wide Web Consortium . Tags in HTML are not case-sensitive 
+    </p>
+    <hr>
+    <p><b>4.What is the deffirence between href attr and src attr?</b></p>
+    <p>href (Hypertext REFerence): Specifies the URL of a resource that the user can navigate to or that the browser should link to. It's commonly used with anchor (<a>), link (<link>), and base (<base>) tags.<br>
+        src (Source): Specifies the URL of a resource that should be embedded or displayed directly on the webpage. It's used with elements like images (<img>), scripts ,script,iframe and video. </p>
+        <hr>
+
+    <p><b>5.What are list tags and how many are they?</b></p>
+    <p>Ans.In HTML, list tags are used to create lists of items. There are three main types of list tags<br>
+        ul: Unordered list, typically with bullet points.<br>
+            ol: Ordered list, typically with numbers or letters.<br>
+            dl: Description list, with terms and their corresponding descriptions.<br></p>
+            <hr>
+   <p><b>6.Create a iframe where a single iframe can opens a multiple links in it?</b></p>
+   <p>Ans.To create an iframe that can load multiple links, you need to have the links target the same iframe. This can be done using the name attribute on the iframe and the target attribute on the anchor (<a>) tags.<br>
+    Iframe: The iframe is given a name attribute (name="myiframe"), which identifies it.<br>
+    Links: Each link (<a>) uses the target attribute with the value "myiframe", which directs the browser to open the link within the iframe named "myiframe".<br>
+   </p>
+   <hr>
+   <p><b>7.Create a register form Using name,email,age,privacy policies and submit and do validation?</b></p>
+   <p><!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registration Form</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 20px;
+            }
+            form {
+                max-width: 500px;
+                margin: auto;
+                padding: 20px;
+                border: 1px solid #ddd;
+                border-radius: 5px;
+            }
+            .form-group {
+                margin-bottom: 15px;
+            }
+            .form-group label {
+                display: block;
+                margin-bottom: 5px;
+            }
+            .form-group input {
+                width: 100%;
+                padding: 8px;
+                box-sizing: border-box;
+            }
+            .form-group input[type="checkbox"] {
+                width: auto;
+            }
+            .form-group input[type="submit"] {
+                background-color: #4CAF50;
+                color: white;
+                border: none;
+                padding: 10px 15px;
+                cursor: pointer;
+            }
+            .form-group input[type="submit"]:hover {
+                background-color: #45a0a0;
+            }
+        </style>
+    </head>
+    <body>
+    
+        <h1>Registration Form</h1>
+        <form action="submit_form.php" method="post">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" min="1" max="120" required>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="privacy" name="privacy" required>
+                <label for="privacy">I agree to the privacy policy</label>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Register">
+            </div>
+        </form>
+    
+    </body>
+    </html></p>
+    <hr>
+
+    <h1>Stage2</h1>
+    <p><b>1.What is command for connecting local repo and github repo</b></p>
+    <p>Ans.git remote add origin "copy code link"</p>
+    <hr>
+    <p><b>2.git command to change the directory of local folder?</b></p>
+    <p>Ans.To change the directory to a different folder, use the "cd" (change directory) command</p>
+    <br>
+    <p><b>3.git command to check the commits on the project</b></p>
+    <p>Ans.git log --oneline</p>
+    <hr>
+    <p><b>4.git command for pushing all the code ravi branch</b></p>
+    <p>Ans.git push origin ravi</p>
+    <hr>
+    <p><b>5.differnce b/w the pull and no of branches and comand to switch the branch</b></p>
+    <p>Ans.pull:to pull the code from remote to local <br>
+          push:to push the code from local to remote</p>
+          <hr>
+    <p><b>6.what are the stages of our project to reach to github rebo</b></p>
+    <p>Ans.git init</p>
+    <hr>
+    <p><b>7.The commands which we use in staging area</b></p>    
+    <p>Ans.git add .</p> 
+    <hr>
+    <p><b>8.command tocheck the no of branches and command to switch the branch.</b></p>
+    <p>Ans.git branch -r</p>
+    <hr>
+</body>
+</html>
